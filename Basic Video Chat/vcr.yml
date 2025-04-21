@@ -1,16 +1,6 @@
-project:
-  name: vcr-web
-instance:
-  name: dev
-  runtime: nodejs16
-  region: aws.euw1
-  application-id: 8bbcc03c-65af-4abb-9320-d751201b4d69
-  entrypoint: [node, index.html]
-  environment:
-    - name: YOURVAR1
-      value: "something-secret"
-    - name: YOURVAR2
-      value: "string value"
-debug:
-  name: debug
-  entrypoint: [sh, debug.sh]
+
+project: BasicVideoChat
+instance: basic-video-chat-instance
+region: us-east-1
+entrypoint: npm start
+build-script: npm install
