@@ -1,6 +1,12 @@
-
-project: BasicVideoChat
-instance: basic-video-chat-instance
-region: us-east-1
-entrypoint: npm start
-build-script: npm install
+project:
+  name: BasicVideoChat
+instance:
+  name: basic-video-chat-instance
+  region: aws.use1
+runtime: nodejs18
+entrypoint:
+  - npm
+  - start
+build-script:
+  - npm
+  - install
