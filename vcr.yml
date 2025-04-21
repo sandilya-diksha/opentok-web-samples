@@ -1,0 +1,6 @@
+
+project: BasicVideoChat
+instance: basic-video-chat-instance
+region: us-east-1
+entrypoint: npm start
+build-script: npm install
